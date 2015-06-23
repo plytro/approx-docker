@@ -1,7 +1,7 @@
 # vim: set ft=dockerfile:
 FROM debian:jessie
 # Author with no obligation to maintain
-MAINTAINER Paul Tötterman <paul.totterman@iki.fi>
+MAINTAINER Steve Stodola <steve@plytro.com>
 RUN echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/00InstallRecommends && \
     echo '9999 stream tcp nowait approx /usr/sbin/approx approx' > /etc/inetd.conf && \
     apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
